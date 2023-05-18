@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+   
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="/static/logo.png" width="150px">
+            </div>
+        
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>    
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="user2.html">Account </a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                
+        
+                </ul>
+            </nav>
+            <img src="/static/cart.png" width="30px" height="30px">           
+        </div>
+       
+</div>
+
+
+<div class="accountpage">
+    <div class="container">
+        <div class="row">
+            <div class="col2">
+                <img src="/static/image1.png" width="100%">
+            </div>
+            <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<form class="form-horizontal" form action="/addprod"  enctype="multipart/form-data" method='POST'>
+<fieldset>
+
+<!-- Form Name -->
+<legend>PRODUCTS</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="product_name">PRODUCT NAME</label>  
+  <div class="col-md-4">
+  <input id="product_name" name="prodname" placeholder="PRODUCT NAME" class="form-control input-md" required="" type="text">
+    
+  </div>
+</div>
+
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="available_quantity">PRICE($)</label>  
+  <div class="col-md-4">
+  <input id="available_quantity" name="quantity" placeholder="PRICE($)" class="form-control input-md" required="" type="text">
+    
+  </div>
+</div>
+
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="product_description">PRODUCT DESCRIPTION</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="product_description" name="description"></textarea>
+  </div>
+</div>
+
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="author">Username</label>  
+  <div class="col-md-4">
+  <input id="author" name="username" placeholder="Username" class="form-control input-md" required="" type="text">
+    
+  </div>
+</div>
+
+
+<div class="form-group">
+    <label class="col-md-4 control-label" for="image">Image</label>  
+    <div class="col-md-4">
+    <input id="image" name="file"  placeholder="image" class="form-control input-md" required="" type="file" >
+      
+    </div>
+  </div>
+
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="singlebutton"></label>
+  <div class="col-md-4">
+    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Submit</button>
+  </div>
+  </div>
+
+</fieldset>
+</form>
+
+
+            
+<div class="brands">
+    <div class="smallcontainer">
+        <div class="row">
+            <div class="col5">
+                <img src="/static/logo-godrej.png">
+            </div>
+            <div class="col5">
+                <img src="/static/logo-oppo.png">
+            </div>
+            <div class="col5">
+                <img src="/static/logo-paypal.png">
+            </div>
+            <div class="col5">
+                <img src="/static/logo-coca-cola.png">
+            </div>
+            <div class="col5">
+                <img src="/static/logo-philips.png">
+            </div>
+        </div>
+    </div>
+</div>

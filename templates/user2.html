@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+   
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="/static/logo.png" width="150px">
+            </div>
+        
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>    
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="user2.html">Account </a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                
+        
+                </ul>
+            </nav>
+            <img src="/static/cart.png" width="30px" height="30px">           
+        </div>
+       
+</div>
+
+
+
+{{msg}}
+<div class="accountpage">
+    <div class="container">
+        <div class="row">
+            <div class="col2">
+                <img src="/static/image1.png" width="100%">
+            </div>
+            
+            <div class="col2">
+            <div class="formcontainer">
+
+                <div class="formbtn">
+                    <span onclick="login()">Login</span>
+                    <span onclick="register()">Register</span>
+                    <hr id="indicator">
+                </div>
+                <form id="loginform" form action="/log" method='POST'>
+                    <input type="text" placeholder="Username" name="username" maxlength="10" minlength="5" required>
+                    <input type="password" placeholder="Password" name="password" minlength="5" maxlength="10" required>
+                    <button type="submit" class="btn">Login</button>
+                </form>
+
+                <form id="regform" action="/reg" method="POST">
+                    <input type="text" placeholder="Username" name="username" minlength="5" maxlength="10" required>
+                    <input type="email" placeholder="Email" name="email" minlength="5" maxlength="40" required>
+                    <input type="password" placeholder="Password" name="password"  minlength="5" maxlength="10" required>
+                    <button type="submit" class="btn">Register</button>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+  
+
+<div class="brands">
+    <div class="smallcontainer">
+        <div class="row">
+            <div class="col5">
+                <img src="/static/logo-godrej.png">
+            </div>
+            <div class="col5">
+                <img src="/static/logo-oppo.png">
+            </div>
+            <div class="col5">
+                <img src="/static/logo-paypal.png">
+            </div>
+            <div class="col5">
+                <img src="/static/logo-coca-cola.png">
+            </div>
+            <div class="col5">
+                <img src="/static/logo-philips.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+var loginform=document.getElementById("loginform");
+var regform=document.getElementById("regform");
+var indicator=document.getElementById("indicator");
+
+function register(){
+    regform.style.transform="translateX(0px)";
+    loginform.style.transform="translateX(0px)";
+    indicator.style.transform="translateX(100px)";
+}
+
+function login(){
+    regform.style.transform="translateX(300px)";
+    loginform.style.transform="translateX(300px)";
+    indicator.style.transform="translateX(0px)";
+}
+</script>
+
+    </body>
+
+
+</html>

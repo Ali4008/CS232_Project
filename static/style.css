@@ -1,0 +1,295 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+p{
+    color: black;
+}
+
+.container{
+ max-width: 1300px;
+ margin: auto;
+ padding-left: 5px;
+ padding-right: 5px;   
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col2 img{
+    max-width: 100%;
+    padding:50px;
+}
+
+.col2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin:25px;
+
+}
+
+.btn{
+    display: inline-block;
+    background: green;
+    color: black;
+    padding: 10px 30px;
+    margin:30px 0;
+    border-radius: 30px;
+ transition:background 0.5 ;
+}
+
+.btn:hover{
+    background: #f30010;
+}
+.header{
+    background:radial-gradient(#00fc71,#0f0101) ;
+}
+
+.header .row{
+    margin: 70px;
+}
+
+.col3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col3 img{
+    width:100%
+}
+
+.smallcontainer{
+ max-width: 1080px;
+ margin: auto;
+ padding-left: 25px;
+ padding-right: 25px;   
+}
+
+.col4{ 
+flex-basis: 25%;
+padding: 10px;
+min-width: 200px;
+margin-bottom: 50px;
+transition: transform 0.5s;
+}
+
+.col4 img{
+    width:100%;
+}
+
+.title{
+    text-align: center;
+    margin: 0 auto 40px;
+    position: relative;
+    line-height: 50px;
+    color:blue;
+}
+
+
+.col4:hover{
+    transform:translateY(-5px) ;
+}
+
+.brands{
+    background: rgb(7, 5, 5);
+    color: black;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.singleprod{
+    margin-top: 80px;
+}
+.singleprod .col2 img{
+padding:00px;
+}
+.singleprod .col2{
+    padding: 20px;
+}
+
+.singleprod select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.smallimgrow{
+    display:flex;
+    justify-content: space-between;
+}
+.smallimg{
+    flex-basis: 25%;
+    cursor:pointer ;
+}
+
+.cartpage{
+    margin: 80px auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cartinfo{
+    display: flex;
+    flex-wrap:wrap ;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color:black;
+    background:rgb(12, 150, 12);
+    font-weight: normal;
+}
+
+
+td{
+    padding: 10px 5px;
+}
+
+td input{
+    width: 40px;
+    height: 30px;
+    padding:5px;
+}
+
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.totalprice{
+    display: flex;
+    justify-content: flex-end;
+}
+.totalprice table{
+    border-top: 3px solid rgb(10, 129, 26);
+width: 100%;
+max-width: 350px;
+}
+
+
+.accountpage{
+    padding:50px 0;
+    background: radial-gradient(#1ee778,#110708);
+}
+.formcontainer{
+    background: white;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+padding:20px 0 ;
+margin: auto;
+box-shadow: 0 0 20px 0px rgba(0,0,0,1);
+overflow: hidden;
+}
+
+
+.formcontainer span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #110708;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+    
+}
+
+
+.formbtn{
+    display: inline-block;
+
+}
+.formcontainer form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top:130px;
+    transition: transform 1s;
+}
+
+
+form input{
+    width: 100%;
+    height: 30px; 
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid rgb(18, 185, 93);
+
+}
+
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10% 0;
+}
+
+form .btn:focus{
+    outline: none;
+}
+
+#loginform{
+    left: -300px;
+}
+#regform{
+    left: 0;
+}
+
+
+#indicator{
+    width: 100px;
+    border: none;
+    background:black;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+
+.inputfield{
+    height: 80px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

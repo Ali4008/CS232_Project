@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" width="150px">
+            </div>
+        
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>    
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Account </a></li>
+                
+        
+                </ul>
+            </nav>
+            <img src="cart.png" width="30px" height="30px">           
+        </div>
+       
+</div>
+
+
+<div class="smallcontainer singleprod">
+    <div class="row">
+        <div class="col2"><img src="images/gallery-1.jpg" width="100%" id="productimg">      
+          
+        <div class="smallimgrow">
+            
+            <div class="smallimgcol">
+                <img src="images/gallery-2.jpg" width="100%" class="smallimg">
+            </div>
+            <div class="smallimgcol">
+                <img src="images/gallery-3.jpg" width="100%" class="smallimg">
+            </div>
+            <div class="smallimgcol">
+                <img src="images/gallery-4.jpg" width="100%" class="smallimg">
+            </div>
+        </div>
+        
+        
+        </div>
+
+  
+        <div class="col2">
+            <h1>Red Printed T shirt</h1>
+            <select>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+            
+            </select>
+            <a href="" class="btn">Add To Cart</a>
+            <h3>Product Details</h3>
+            <br><br>What does a red shirt look like on a man? A red T-shirt with black jeans or chinos gives you a classic look.</br></p>
+    </div>
+</div>
+</div>
+
+<div class="smallcontainer">
+    <div class="row2">
+        <h2>Related Products</h2>
+    </div>
+</div>
+
+
+<!--Products-->
+<div class="smallcontainer">
+    <div class="row">
+        <div class="col4">
+            <img src="images/product-1.jpg">
+            <h4>Red T-shirt</h4>
+            <p>$50.00</p>
+        </div>
+        <div class="col4">
+            <img src="images/product-2.jpg">
+            <h4>Shoes</h4>
+            <p>$70.00</p>
+        </div>
+        <div class="col4">
+            <img src="images/product-3.jpg">
+            <h4>Pants</h4>
+            <p>$40.00</p>
+        </div>
+        <div class="col4">
+            <img src="images/product-4.jpg">
+            <h4>Polo Shirt</h4>
+            <p>$80.00</p>
+        </div>
+        <div class="col4">
+            <img src="images/product-5.jpg">
+            <h4>Sneakers</h4>
+            <p>$50.00</p>
+        </div>
+        <div class="col4">
+            <img src="images/product-6.jpg">
+            <h4>Black T-shirt</h4>
+            <p>$20.00</p>
+        </div>
+        <div class="col4">
+            <img src="images/product-7.jpg">
+            <h4>Socks</h4>
+            <p>$10.00</p>
+        </div>
+        <div class="col4">
+            <img src="images/product-8.jpg">
+            <h4>Black chain Watch</h4>
+            <p>$90.00</p>
+        </div>
+        <div class="col4">
+            <img src="images/product-9.jpg">
+            <h4>Leather Watch</h4>
+            <p>$70.00</p>
+        </div>
+        <div class="col4">
+            <img src="images/product-10.jpg">
+            <h4>Joggers</h4>
+            <p>$80.00</p>
+        </div>
+    </div>
+        </div> 
+    </div>
+
+  
+
+<div class="brands">
+    <div class="smallcontainer">
+        <div class="row">
+            <div class="col5">
+                <img src="images/logo-godrej.png">
+            </div>
+            <div class="col5">
+                <img src="images/logo-oppo.png">
+            </div>
+            <div class="col5">
+                <img src="images/logo-paypal.png">
+            </div>
+            <div class="col5">
+                <img src="images/logo-coca-cola.png">
+            </div>
+            <div class="col5">
+                <img src="images/logo-philips.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    var productimg=document.getElementById("productimg");
+    var smallimg=document.getElementsByClassName("smallimg");
+smallimg[0].onclick=function(){
+    productimg.src=smallimg[0].src;
+}
+smallimg[1].onclick=function(){
+    productimg.src=smallimg[1].src;
+}
+smallimg[2].onclick=function(){
+    productimg.src=smallimg[2].src;
+}
+
+</script>
+
+    </body>
+
+
+</html>
